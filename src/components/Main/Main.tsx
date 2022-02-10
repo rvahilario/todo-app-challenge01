@@ -1,8 +1,7 @@
 import { Header } from 'components/Header';
 import { Container, Area } from './styles';
-import { MainProps } from './types';
 
-export const Main = ({ children }: MainProps) => {
+export const Main = () => {
 	return (
 		<Container>
 			<Area>
