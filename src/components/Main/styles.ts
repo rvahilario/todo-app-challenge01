@@ -7,4 +7,5 @@ export const Container = styled.div`
 export const Area = styled.div`
 	margin: auto;
 	max-width: 90%;
+	padding: 15px;
 `;
