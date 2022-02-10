@@ -12,7 +12,9 @@ export const TaskDisplay = ({ task }: TaskDisplayProps) => {
 				checked={isDone}
 				onChange={event => setIsDone(event.target.checked)}
 			/>
-			<span>{task.name}</span>
+			<span>
+				{task.name} - {task.done.toString()}
+			</span>
 		</Container>
 	);
 };

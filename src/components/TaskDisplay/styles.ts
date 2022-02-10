@@ -21,7 +21,7 @@ export const Container = styled.div(
 
 		span {
 			margin-left: 15px;
-			font-size: 1.2rem;
+			font-size: 1rem;
 			text-decoration: ${done ? 'line-through' : 'initial'};
 		}
 		`
