@@ -1,11 +1,10 @@
-import { Container } from './styles';
+import { Container, Area } from './styles';
 import { MainProps } from './types';
 
-export const Main = ({ title, description }: MainProps) => {
+export const Main = ({ children }: MainProps) => {
 	return (
 		<Container>
-			<h1>{title}</h1>
-			<h3>{description}</h3>
+			<Area>{children}</Area>
 		</Container>
 	);
 };

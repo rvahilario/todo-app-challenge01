@@ -1,4 +1,5 @@
+import React from 'react';
+
 export interface MainProps {
-	title: string;
-	description: string;
+	children?: React.ReactNode;
 }
