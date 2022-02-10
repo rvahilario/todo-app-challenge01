@@ -22,13 +22,23 @@ export const Main = () => {
 		setList([newTask, ...list]);
 	};
 
+	const handleTaskChange = (id: number, done: boolean) => {
+		const newList = [...list];
+		for (const index in newList) {
+			if (newList[index].id === id) {
+				newList[index].done = done;
+			}
+		}
+		setList(newList);
+	};
+
 	return (
 		<Container>
 			<Area>
 				<Header title='To-do list' />
 				<AddTask onEnter={handleAddTask} />
 				{list.map(task => (
-					<TaskDisplay task={task} key={task.id} />
+					<TaskDisplay key={task.id} task={task} onChange={handleTaskChange} />
 				))}
 			</Area>
 		</Container>

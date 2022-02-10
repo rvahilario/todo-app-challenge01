@@ -44,6 +44,7 @@
 				"namedComponents": "arrow-function",
 				"unnamedComponents": "arrow-function"
 			}
-		]
+		],
+		"no-restricted-syntax": "off"
 	}
 }
